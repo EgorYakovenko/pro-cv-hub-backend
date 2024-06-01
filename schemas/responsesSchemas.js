@@ -16,7 +16,7 @@ const { Schema, model } = mongoose;
 
 const responseSchema = new Schema(
   {
-    date: {
+    dateResp: {
       type: String,
       require: [true, 'Set date'],
     },
@@ -35,6 +35,10 @@ const responseSchema = new Schema(
     interview: {
       type: String,
       require: [true, 'Add interview stage'],
+    },
+    dateEvent: {
+      type: String,
+      require: [true, 'Add dateEvent'],
     },
   },
   { versionKey: false }

@@ -11,11 +11,11 @@ const responsesRouter = express.Router();
 
 responsesRouter.get('/', getAllResponses);
 
+responsesRouter.post('/', createResponse);
+
 // contactsRouter.get('/:id', getOneContact);
 
 // contactsRouter.delete('/:id', deleteContact);
-
-responsesRouter.post('/', createResponse);
 
 // contactsRouter.put('/:id', updateContact);
 
